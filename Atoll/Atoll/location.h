@@ -16,6 +16,9 @@ namespace GPS
         
     public:
         Location(const std::string name, const Latitude latitude, const Longitude longitude);
+        Latitude getLatitude() const;
+        Longitude getLongitude() const;
+        std::string getName() const;
     };
 }
 

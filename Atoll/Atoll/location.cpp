@@ -5,3 +5,18 @@ GPS::Location::Location(const std::string name, const Latitude latitude, const L
 {
     
 }
+
+GPS::Latitude GPS::Location::getLatitude() const
+{
+    return latitude_;
+}
+
+GPS::Longitude GPS::Location::getLongitude() const
+{
+    return longitude_;
+}
+
+std::string GPS::Location::getName() const
+{
+    return name_;
+}

@@ -4,6 +4,8 @@
 #include "range.h"
 #include "gps.h"
 #include "location.h"
+#include "snforwardlist.h"
+#include "haversine.h"
 
 using namespace std::literals::string_literals;
 
@@ -25,6 +27,11 @@ int main() {
         GPS::Location{ "New Zealand"s, GPS::Latitude{ GPS::Latitude::Cardinal::S, 41, 17, 0 }, GPS::Longitude{ GPS::Longitude::Cardinal::E, 174, 27, 0 } },
 
     };
+    
+    auto distance{ snForwardList(island) };
+    auto hav{ haversine(12.4, 5.3, 1.142, 9) };
+    std::cout << "HAVERSINE: " << hav;
+    
     
     return 0;
 }

@@ -28,6 +28,18 @@ namespace GPS
         
     public:
         Angle(const degree_type degree, const minute_type minute, const second_type second) : degree_{degree}, minute_{minute}, second_{second} {}
+        degree_type getDegree() const
+        {
+            return degree_;
+        }
+        minute_type getMinute() const
+        {
+            return minute_;
+        }
+        second_type getSecond() const
+        {
+            return second_;
+        }
     };
 }
 

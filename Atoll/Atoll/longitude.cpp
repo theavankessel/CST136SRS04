@@ -5,3 +5,5 @@ GPS::Longitude::Longitude(const Cardinal cardinal, const degree_type degree, con
 {
     
 }
+
+

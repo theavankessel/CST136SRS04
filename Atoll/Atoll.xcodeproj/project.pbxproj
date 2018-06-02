@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9927528D20BDFACE003B00E0 /* snforwardlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9927528C20BDFACE003B00E0 /* snforwardlist.cpp */; };
+		9927529020C0D29E003B00E0 /* degreetoradian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9927528E20C0D29E003B00E0 /* degreetoradian.cpp */; };
+		9927529420C300FE003B00E0 /* haversine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9927529220C300FE003B00E0 /* haversine.cpp */; };
 		99B62FDB20B9AA350012B950 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99B62FDA20B9AA350012B950 /* main.cpp */; };
 		99B62FE820B9CFC00012B950 /* latitude.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99B62FE720B9CFC00012B950 /* latitude.cpp */; };
 		99B62FEB20B9CFE40012B950 /* longitude.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99B62FEA20B9CFE40012B950 /* longitude.cpp */; };
@@ -26,6 +29,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9927528B20BDFAA9003B00E0 /* snforwardlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = snforwardlist.h; sourceTree = "<group>"; };
+		9927528C20BDFACE003B00E0 /* snforwardlist.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = snforwardlist.cpp; sourceTree = "<group>"; };
+		9927528E20C0D29E003B00E0 /* degreetoradian.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = degreetoradian.cpp; sourceTree = "<group>"; };
+		9927528F20C0D29E003B00E0 /* degreetoradian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = degreetoradian.h; sourceTree = "<group>"; };
+		9927529120C300EB003B00E0 /* haversine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = haversine.h; sourceTree = "<group>"; };
+		9927529220C300FE003B00E0 /* haversine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = haversine.cpp; sourceTree = "<group>"; };
 		99B62FD720B9AA350012B950 /* Atoll */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Atoll; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B62FDA20B9AA350012B950 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		99B62FE120B9AF020012B950 /* range.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = range.h; sourceTree = "<group>"; };
@@ -77,6 +86,12 @@
 				99B62FEA20B9CFE40012B950 /* longitude.cpp */,
 				99B62FED20B9CFFF0012B950 /* location.h */,
 				99B62FEE20B9D00C0012B950 /* location.cpp */,
+				9927528B20BDFAA9003B00E0 /* snforwardlist.h */,
+				9927528C20BDFACE003B00E0 /* snforwardlist.cpp */,
+				9927528E20C0D29E003B00E0 /* degreetoradian.cpp */,
+				9927528F20C0D29E003B00E0 /* degreetoradian.h */,
+				9927529120C300EB003B00E0 /* haversine.h */,
+				9927529220C300FE003B00E0 /* haversine.cpp */,
 			);
 			path = Atoll;
 			sourceTree = "<group>";
@@ -137,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9927529420C300FE003B00E0 /* haversine.cpp in Sources */,
+				9927529020C0D29E003B00E0 /* degreetoradian.cpp in Sources */,
 				99B62FE820B9CFC00012B950 /* latitude.cpp in Sources */,
 				99B62FEB20B9CFE40012B950 /* longitude.cpp in Sources */,
+				9927528D20BDFACE003B00E0 /* snforwardlist.cpp in Sources */,
 				99B62FDB20B9AA350012B950 /* main.cpp in Sources */,
 				99B62FEF20B9D00C0012B950 /* location.cpp in Sources */,
 			);
