@@ -10,6 +10,9 @@
 		9927528D20BDFACE003B00E0 /* snforwardlist.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9927528C20BDFACE003B00E0 /* snforwardlist.cpp */; };
 		9927529020C0D29E003B00E0 /* degreetoradian.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9927528E20C0D29E003B00E0 /* degreetoradian.cpp */; };
 		9927529420C300FE003B00E0 /* haversine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9927529220C300FE003B00E0 /* haversine.cpp */; };
+		994E1A1520C6FA2800CA1A3A /* totaldegrees.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994E1A1420C6FA2800CA1A3A /* totaldegrees.cpp */; };
+		994E1A1820C7017200CA1A3A /* snmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994E1A1720C7017200CA1A3A /* snmap.cpp */; };
+		994E1A1B20C70F4E00CA1A3A /* snvector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 994E1A1A20C70F4E00CA1A3A /* snvector.cpp */; };
 		99B62FDB20B9AA350012B950 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99B62FDA20B9AA350012B950 /* main.cpp */; };
 		99B62FE820B9CFC00012B950 /* latitude.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99B62FE720B9CFC00012B950 /* latitude.cpp */; };
 		99B62FEB20B9CFE40012B950 /* longitude.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 99B62FEA20B9CFE40012B950 /* longitude.cpp */; };
@@ -35,6 +38,12 @@
 		9927528F20C0D29E003B00E0 /* degreetoradian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = degreetoradian.h; sourceTree = "<group>"; };
 		9927529120C300EB003B00E0 /* haversine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = haversine.h; sourceTree = "<group>"; };
 		9927529220C300FE003B00E0 /* haversine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = haversine.cpp; sourceTree = "<group>"; };
+		994E1A1320C6FA1700CA1A3A /* totaldegrees.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = totaldegrees.h; sourceTree = "<group>"; };
+		994E1A1420C6FA2800CA1A3A /* totaldegrees.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = totaldegrees.cpp; sourceTree = "<group>"; };
+		994E1A1620C7016500CA1A3A /* snmap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = snmap.h; sourceTree = "<group>"; };
+		994E1A1720C7017200CA1A3A /* snmap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = snmap.cpp; sourceTree = "<group>"; };
+		994E1A1920C70F3400CA1A3A /* snvector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = snvector.h; sourceTree = "<group>"; };
+		994E1A1A20C70F4E00CA1A3A /* snvector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = snvector.cpp; sourceTree = "<group>"; };
 		99B62FD720B9AA350012B950 /* Atoll */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Atoll; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B62FDA20B9AA350012B950 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		99B62FE120B9AF020012B950 /* range.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = range.h; sourceTree = "<group>"; };
@@ -88,10 +97,16 @@
 				99B62FEE20B9D00C0012B950 /* location.cpp */,
 				9927528B20BDFAA9003B00E0 /* snforwardlist.h */,
 				9927528C20BDFACE003B00E0 /* snforwardlist.cpp */,
+				994E1A1620C7016500CA1A3A /* snmap.h */,
+				994E1A1720C7017200CA1A3A /* snmap.cpp */,
+				994E1A1920C70F3400CA1A3A /* snvector.h */,
+				994E1A1A20C70F4E00CA1A3A /* snvector.cpp */,
 				9927528E20C0D29E003B00E0 /* degreetoradian.cpp */,
 				9927528F20C0D29E003B00E0 /* degreetoradian.h */,
 				9927529120C300EB003B00E0 /* haversine.h */,
 				9927529220C300FE003B00E0 /* haversine.cpp */,
+				994E1A1320C6FA1700CA1A3A /* totaldegrees.h */,
+				994E1A1420C6FA2800CA1A3A /* totaldegrees.cpp */,
 			);
 			path = Atoll;
 			sourceTree = "<group>";
@@ -153,10 +168,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9927529420C300FE003B00E0 /* haversine.cpp in Sources */,
+				994E1A1820C7017200CA1A3A /* snmap.cpp in Sources */,
 				9927529020C0D29E003B00E0 /* degreetoradian.cpp in Sources */,
 				99B62FE820B9CFC00012B950 /* latitude.cpp in Sources */,
 				99B62FEB20B9CFE40012B950 /* longitude.cpp in Sources */,
+				994E1A1520C6FA2800CA1A3A /* totaldegrees.cpp in Sources */,
 				9927528D20BDFACE003B00E0 /* snforwardlist.cpp in Sources */,
+				994E1A1B20C70F4E00CA1A3A /* snvector.cpp in Sources */,
 				99B62FDB20B9AA350012B950 /* main.cpp in Sources */,
 				99B62FEF20B9D00C0012B950 /* location.cpp in Sources */,
 			);

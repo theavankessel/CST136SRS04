@@ -5,7 +5,7 @@
 #include "gps.h"
 #include "location.h"
 #include "snforwardlist.h"
-#include "haversine.h"
+#include "snmap.h"
 
 using namespace std::literals::string_literals;
 
@@ -29,8 +29,7 @@ int main() {
     };
     
     auto distance{ snForwardList(island) };
-    auto hav{ haversine(12.4, 5.3, 1.142, 9) };
-    std::cout << "HAVERSINE: " << hav;
+    auto map{ snMap(island) };
     
     
     return 0;
