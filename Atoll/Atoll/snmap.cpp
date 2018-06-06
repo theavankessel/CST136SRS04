@@ -26,8 +26,6 @@ double snMap(const std::array<GPS::Location, 12> island)
     
     while (current != end)
     {
-        std::cout << current->first << " " << current->second.getName() << std::endl;
-        
         auto currLongDegree{totalDegrees(current->second.getLongitude().getDegree().getValue(), current->second.getLongitude().getMinute().getValue(), current->second.getLongitude().getSecond().getValue())};
         auto prevLongDegree{totalDegrees(previous->second.getLongitude().getDegree().getValue(), previous->second.getLongitude().getMinute().getValue(), previous->second.getLongitude().getSecond().getValue())};
         

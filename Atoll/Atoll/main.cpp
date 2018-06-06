@@ -6,6 +6,9 @@
 #include "location.h"
 #include "snforwardlist.h"
 #include "snmap.h"
+#include "snvector.h"
+#include "haversine.h"
+#include "degreetoradian.h"
 
 using namespace std::literals::string_literals;
 
@@ -30,7 +33,8 @@ int main() {
     
     auto distance{ snForwardList(island) };
     auto map{ snMap(island) };
-    
+    auto vector{ snVector(island) };
+    auto hav{ haversine(degreeToRadian(30.0), degreeToRadian(32.3), degreeToRadian(-136.0), degreeToRadian(149)) };
     
     return 0;
 }
