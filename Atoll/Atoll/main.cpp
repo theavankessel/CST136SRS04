@@ -7,8 +7,10 @@
 #include "snforwardlist.h"
 #include "snmap.h"
 #include "snvector.h"
+#include "weforwardlist.h"
 #include "haversine.h"
 #include "degreetoradian.h"
+#include "wevector.h"
 
 using namespace std::literals::string_literals;
 
@@ -34,6 +36,8 @@ int main() {
     auto distance{ snForwardList(island) };
     auto map{ snMap(island) };
     auto vector{ snVector(island) };
+    auto weForward{ weForwardList(island) };
+    auto weVect{ weVector(island) };
     
     return 0;
 }
