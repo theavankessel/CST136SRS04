@@ -34,7 +34,6 @@ int main() {
     auto distance{ snForwardList(island) };
     auto map{ snMap(island) };
     auto vector{ snVector(island) };
-    auto hav{ haversine(degreeToRadian(30.0), degreeToRadian(32.3), degreeToRadian(-136.0), degreeToRadian(149)) };
     
     return 0;
 }

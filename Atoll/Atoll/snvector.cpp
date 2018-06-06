@@ -10,21 +10,7 @@
 #include "totaldegrees.h"
 #include "degreetoradian.h"
 #include "haversine.h"
-/*
-double compareLocations(const GPS::Location locationA, const GPS::Location locationB)
-{
-    if(locationA.getLatitude().getDegree().getValue() == locationB.getLatitude().getDegree().getValue())
-    {
-        if(locationA.getLatitude().getMinute().getValue() == locationB.getLatitude().getMinute().getValue())
-        {
-            return locationA.getLatitude().getSecond().getValue() < locationB.getLatitude().getSecond().getValue();
-        }
-        return locationA.getLatitude().getMinute().getValue() < locationB.getLatitude().getMinute().getValue();
-    }
-    
-    return locationA.getLatitude().getDegree().getValue() < locationB.getLatitude().getDegree().getValue();
-}
-*/
+
 double snVector(const std::array<GPS::Location, 12> island)
 {
     //const std::array<GPS::Location, 12>::const_iterator
@@ -44,7 +30,6 @@ double snVector(const std::array<GPS::Location, 12> island)
      */
     
     std::vector<double> distance;
-    double result{0.0};
     
     auto compareLocations
     {
@@ -74,9 +59,16 @@ double snVector(const std::array<GPS::Location, 12> island)
     {
         std::cout << current->get().getName() << std::endl;
         
+        auto currLatDegree{totalDegrees(current->get().getLatitude().getDegree().getValue(), current->get().getLatitude().getMinute().getValue(), current->get().getLatitude().getSecond().getValue())};
+        auto currLongDegree{totalDegrees(current->get().getLongitude().getDegree().getValue(), current->get().getLongitude().getMinute().getValue(), current->get().getLongitude().getSecond().getValue())};
+        auto prevLatDegree{totalDegrees(previous->get().getLatitude().getDegree().getValue(), previous->get().getLatitude().getMinute().getValue(), previous->get().getLatitude().getSecond().getValue())};
+        auto prevLongDegree{totalDegrees(previous->get().getLongitude().getDegree().getValue(), previous->get().getLongitude().getMinute().getValue(), previous->get().getLongitude().getSecond().getValue())};
+        
+        distance.push_back(haversine(degreeToRadian(prevLatDegree), degreeToRadian(currLatDegree), degreeToRadian(prevLongDegree), degreeToRadian(currLongDegree)));
+        
         previous = current;
         ++current;
     }
     
-    return result;
+    return std::accumulate(distance.begin(), distance.end(), 0.0);
 }
