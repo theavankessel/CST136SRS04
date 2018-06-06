@@ -9,7 +9,6 @@
 #include "degreetoradian.h"
 #include "totaldegrees.h"
 
-// TODO: Minutes and Seconds need to be negative for South
 double snForwardList(const std::array<GPS::Location, 12> island)
 {
     std::vector<double> distance;

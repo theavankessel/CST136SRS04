@@ -13,22 +13,9 @@
 
 double snVector(const std::array<GPS::Location, 12> island)
 {
-    //const std::array<GPS::Location, 12>::const_iterator
     const auto iter {island.cbegin()};
     const auto end {island.cend()};
     std::vector<std::reference_wrapper<const GPS::Location>> islandList(iter, end);
-    
-    /*
-    std::array<GPS::Location, 12>::const_iterator iter {island.cbegin()};
-    const std::array<GPS::Location, 12>::const_iterator end {island.cend()};
-    std::vector<std::reference_wrapper<const GPS::Location>> islandList;
-    while(iter != end)
-    {
-        const GPS::Location& location = *iter;
-        islandList.push_back(location);
-    }
-     */
-    
     std::vector<double> distance;
     
     auto compareLocations
@@ -57,8 +44,6 @@ double snVector(const std::array<GPS::Location, 12> island)
     
     while (current != endIter)
     {
-        std::cout << current->get().getName() << std::endl;
-        
         auto currLatDegree{totalDegrees(current->get().getLatitude().getDegree().getValue(), current->get().getLatitude().getMinute().getValue(), current->get().getLatitude().getSecond().getValue())};
         auto currLongDegree{totalDegrees(current->get().getLongitude().getDegree().getValue(), current->get().getLongitude().getMinute().getValue(), current->get().getLongitude().getSecond().getValue())};
         auto prevLatDegree{totalDegrees(previous->get().getLatitude().getDegree().getValue(), previous->get().getLatitude().getMinute().getValue(), previous->get().getLatitude().getSecond().getValue())};

@@ -11,6 +11,7 @@
 #include "haversine.h"
 #include "degreetoradian.h"
 #include "wevector.h"
+#include "wemap.h"
 
 using namespace std::literals::string_literals;
 
@@ -38,6 +39,7 @@ int main() {
     auto vector{ snVector(island) };
     auto weForward{ weForwardList(island) };
     auto weVect{ weVector(island) };
+    auto wemap{ weMap(island) };
     
     return 0;
 }
